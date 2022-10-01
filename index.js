@@ -10,6 +10,12 @@ require("dotenv").config();
 
 const PORT = 5432;
 
+app.use(cors({
+    origin: "https://butterflix.vercel.app",
+    methods: ['GET', 'POST', 'DELETE', 'OPTIONS'], 
+    credentials: true,
+  }));
+
 app.use(express.json());
 
 app.use(cookieParser());
@@ -17,11 +23,6 @@ app.use(cookieParser());
 // app.use(express.static("../client/build"))
 
 app.use("/api", routes);
-
-app.use(cors({
-  origin: "https://butterflix.vercel.app",
-  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'], credentials: true,
-}));
 
 
 db.sync({force: false})
