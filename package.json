@@ -1,0 +1,41 @@
+{
+  "author": "Nan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "16.17.0 ",
+    "npm": "8.15.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.7",
+    "@react-oauth/google": "^0.2.6",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.3.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "google-auth-library": "^8.1.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19",
+    "npm": "^8.18.0",
+    "passport": "^0.6.0",
+    "pg": "^8.7.3",
+    "postgres": "^3.2.4",
+    "react": "^18.2.0",
+    "sequelize": "^6.21.3",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "typescript": "^4.7.4",
+    "uuid": "^8.3.2"
+  },
+  "license": "ISC"
+}
