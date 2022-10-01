@@ -8,7 +8,10 @@ const client = new OAuth2Client(
 
 exports.register = (req, res) => {
   const user = req.body;
-  User.create(user).then(() => res.sendStatus(201));
+  User.create(user).then(() => {
+    console.log(user)
+    res.sendStatus(201)
+  });
 };
 
 exports.login = (req, res) => {
@@ -35,6 +38,7 @@ exports.login = (req, res) => {
       const token = tokens.generateToken(payload);
       res.cookie("token", token);
       res.status(201).send(token);
+      console.log(user)
     });
   });
 };
