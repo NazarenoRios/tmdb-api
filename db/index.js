@@ -1,8 +1,7 @@
-require('dotenv').config()
 const Sequelize = require("sequelize")
 
-const db = new Sequelize("butterflix", "nan", "8PglUPlvoqIqUXJvJK5rvPOnY4h0rH9L", {
-  host: 'dpg-ccrns5ien0hinujvijdg-a',
+const db = new Sequelize("butterflix_fdhi", "butterflix_fdhi_user", "3d5f2B59bcX6OclQOfUQjXwMVbkY3JzA", {
+  host: 'dpg-ccrr6sqen0hinuk41dqg-a',
   dialect: 'postgres',
   logging: false
 });
