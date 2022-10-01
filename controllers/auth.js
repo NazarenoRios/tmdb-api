@@ -7,6 +7,7 @@ const client = new OAuth2Client(
 );
 
 exports.register = (req, res) => {
+  console.log(req.body)
   const user = req.body;
   User.create(user).then(() => res.sendStatus(201));
 };
@@ -40,6 +41,7 @@ exports.login = (req, res) => {
 };
 
 exports.validation = (req, res) => {
+  console.log(req.user)
   res.send(req.user);
 };
 

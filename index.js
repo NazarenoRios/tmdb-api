@@ -11,7 +11,7 @@ require("dotenv").config();
 const PORT = 5432;
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "http://butterflix.vercel.app",
     methods: ['GET', 'POST', 'DELETE', 'OPTIONS'], credentials: true,
   }));
 
