@@ -36,7 +36,7 @@ exports.login = (req, res) => {
         pic: user.pic
       };
       const token = tokens.generateToken(payload);
-      res.cookie("token", token);
+      localStorage("token",token)
       res.status(201).send(token);
       console.log(user)
     });
