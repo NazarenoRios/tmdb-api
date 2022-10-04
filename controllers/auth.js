@@ -87,6 +87,7 @@ exports.googlelogin = (req, res) => {
                 };
                 const token = tokens.generateToken(payload);
                 res.cookie("token", token);
+                console.log("token",token)
                 res.sendStatus(201);
               })
             });
